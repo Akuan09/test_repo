@@ -1,4 +1,4 @@
-def node = tool 'NodeJS';
+def node = tool name: 'NodeJS', type: "hudson.model.Node";
 
 pipeline {
     agent any
