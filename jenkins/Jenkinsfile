@@ -1,8 +1,6 @@
-def node = tool name: 'NodeJS', type: "hudson.model.Node";
-
 pipeline {
     agent any
-    // tools {NodeJS "node"}
+    tools {nodejs "NodeJS"}
     stages {
         stage('Checkout') {
             steps {
