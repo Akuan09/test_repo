@@ -1,3 +1,5 @@
+def node = tool 'NodeJS';
+
 pipeline {
     agent any
     // tools {NodeJS "node"}
@@ -8,7 +10,6 @@ pipeline {
             }
         }
         stage('Test') {
-            def node = tool 'NodeJS';
             steps {
                 script {
                     sh 'npm install'
