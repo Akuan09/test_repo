@@ -15,14 +15,14 @@ pipeline {
                 }
             }
         }
-        // stage('SonarQube analysis') {
-        //     steps {
-        //         def scannerHome = tool 'SonarScanner';
-        //         withSonarQubeEnv() {
-        //             sh "${scannerHome}/bin/sonnar-scanner"
-        //         }
-        //     }
-        // }
+        stage('SonarQube analysis') {
+            steps {
+                def scannerHome = tool 'SonarScanner';
+                withSonarQubeEnv() {
+                    sh "${scannerHome}/bin/sonnar-scanner"
+                }
+            }
+        }
     }
     post {
         always {
