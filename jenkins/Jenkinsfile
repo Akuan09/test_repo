@@ -8,8 +8,8 @@ pipeline {
             }
         }
         stage('Test') {
+            def node = tool 'NodeJS';
             steps {
-                def node = tool 'NodeJS';
                 script {
                     sh 'npm install'
                     sh 'npm test'
