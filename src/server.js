@@ -17,7 +17,7 @@ mongoose.connect('mongodb://localhost/test_repo').then(() => {
 
 // Defining a route for the root URL
 app.get('/', (req, res) => {
-    res.send('Hello World!'); // Sending a response with the message "Hello World!"
+    res.send('Bonjour Monde!'); // Sending a response with the message "Hello World!"
 });
 
 // Starting the server and listening on the specified port
