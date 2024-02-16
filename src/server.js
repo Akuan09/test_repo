@@ -15,7 +15,7 @@ mongoose.connect('mongodb://localhost/test_repo').then(() => {
     console.log('Failed to connect to MongoDB', err); // Logging an error message if the connection fails
 });
 
-// Defining a route for the root URL
+// Defining a route for the root UR
 app.get('/', (req, res) => {
     res.send('Hello World!'); // Sending a response with the message "Hello World!"
 });
